@@ -1,0 +1,12 @@
+def get_gcd(a, b):
+    while b:
+        # Standard swap using the remainder loop
+        a, b = b, a % b
+    return a
+
+# Example Usage:
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result = get_gcd(num1, num2)
+print(f"The GCD of {num1} and {num2} is: {result}")  # Output: 6
